@@ -6,6 +6,7 @@ import Customer from "./pages/Customer";
 import Product from "./pages/Product";
 import Quotation from "./pages/Quotation";
 import "../src/style/SideMenuCode.css";
+import CustomerList from "./pages/CustomerList";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           >
             <Routes>
               <Route path="/" element={<Customer />} />
+              <Route path="/CustomerList" element={<CustomerList />} />
               <Route path="/product" element={<Product />} />
               <Route path="/quotation" element={<Quotation />} />
             </Routes>
